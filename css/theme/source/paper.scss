@@ -1,0 +1,153 @@
+/**
+* Paper theme
+*/
+
+
+// Default mixins and settings -----------------
+@import "../template/mixins";
+@import "../template/settings";
+// ---------------------------------------------
+
+
+// Include theme-specific fonts
+@import url('https://fonts.googleapis.com/css?family=Allerta+Stencil|Space+Mono');
+@import url('https://fonts.googleapis.com/css?family=BioRhyme');
+
+
+// Override theme settings (see ../template/settings.scss)
+$backgroundColor: #222;
+
+$mainColor: #fff;
+$headingColor: #fff;
+
+$mainFontSize: 42px;
+$mainFont: 'Source Sans Pro', Helvetica, sans-serif;
+$headingFont: 'Source Sans Pro', Helvetica, sans-serif;
+$headingTextShadow: none;
+$headingLetterSpacing: normal;
+$headingTextTransform: uppercase;
+$headingFontWeight: 600;
+$linkColor: #42affa;
+$linkColorHover: lighten( $linkColor, 15% );
+$selectionBackgroundColor: lighten( $linkColor, 25% );
+
+$heading1Size: 2.5em;
+$heading2Size: 1.6em;
+$heading3Size: 1.3em;
+$heading4Size: 1.0em;
+
+section.has-light-background {
+	&, h1, h2, h3, h4, h5, h6 {
+		color: #222;
+	}
+}
+
+// Theme template ------------------------------
+@import "../template/theme";
+// ---------------------------------------------
+
+/*
+* Colors
+*/
+
+$avril: #00d323;
+$mai: #f3f0d1;
+$juin: #f7de1c;
+
+$carbon: #111111;
+
+
+/*
+* Typography
+*/
+$font-base: 16px;
+
+$ratios:(
+   gold: 1.618,
+   des: 1.5,
+   mob: 1.9
+);
+
+$one-ratio: 1.618;
+
+$measures:(
+   rocco: 5,
+   biggest: 4,
+   bigger: 3,
+   big: 2,
+   quite-nor: 1.25,
+   nor: 1,
+   sm: 0.75,
+   xsm: 0.5,
+   xxsmall: 0.25
+);
+
+@function fontsize($ratio, $measure, $base) {
+  $size: ($measure * $ratio) * $base;
+  @return $size;
+}
+
+@mixin fontDef($type: 'mainHeading', $color: $carbon) {
+  @if $type == 'mainHeading' {
+		font-family: 'BioRhyme', serif;
+    font-weight: 400;
+    font-size: fontsize(map-get($ratios, gold), map-get($measures, biggest), $font-base);
+    padding-bottom: 20px;
+    color: $color;
+  }
+  @else if $type == 'subHeading'{
+    font-family: 'Space Mono', monospace;
+    font-size: fontsize(map-get($ratios, gold), map-get($measures, big), $font-base);
+    padding-bottom: 20px;
+    color: $color;
+  }
+  @else if $type == 'paragraph'{
+    font-family: 'Space Mono', monospace;
+    font-size: fontsize(map-get($ratios, gold), map-get($measures, quite-nor), $font-base);
+    color: $color;
+    line-height: 1.2;
+    padding-bottom: 0.5rem;
+  }
+  @else if $type == 'link'{
+    font-family: 'Space Mono', monospace;
+    font-size: fontsize(map-get($ratios, gold), map-get($measures, quite-nor), $font-base);
+    color: $color;
+    line-height: 1.2;
+    padding-bottom: 0.5rem;
+  }
+}
+
+body {
+	background-color: $mai;
+}
+
+.slides.paperSlides {
+	border: 1px solid $carbon;
+	box-shadow: -1rem 1rem 0  $carbon;
+	height: calc(100vh - 5rem) !important;
+
+}
+
+.reveal .paperContents {
+	margin: 0 2.5rem;
+}
+
+h1.mainHeading{
+	@include fontDef('mainHeading', $carbon);
+	text-transform: capitalize;
+	text-align: left;
+
+	&:after {
+		width: 4ch;
+		content: '';
+		padding: 0.25rem;
+		background-color: $carbon;
+		display: block;
+		margin: 4rem 0;
+	}
+}
+
+p.paragraph {
+ @include fontDef('paragraph', $carbon)
+ text-align: left;
+}

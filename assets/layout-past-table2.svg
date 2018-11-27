@@ -4,7 +4,7 @@
         <g id="Table" fill-rule="nonzero" stroke="#373735" stroke-width="3">
             <rect id="Rectangle" fill-opacity="0" fill="#D8D8D8" x="1.5" y="1.5" width="257" height="262" rx="2"></rect>
             <rect id="Rectangle" fill="#FEA575" x="6.5" y="7.5" width="247" height="67" rx="2"></rect>
-            <g id="Ante-CSS" transform="translate(91.000000, 110.000000)" fill="#F1BBED">
+            <g id="Ante-CSS" transform="translate(121.000000, 110.000000)" fill="#F1BBED">
                 <rect id="Rectangle" x="1.5" y="1.5" width="35" height="12"></rect>
                 <rect id="Rectangle" x="41.5" y="21.5" width="35" height="12"></rect>
                 <rect id="Rectangle" x="1.5" y="41.5" width="35" height="12"></rect>
@@ -12,8 +12,8 @@
                 <rect id="Rectangle" x="1.5" y="81.5" width="35" height="12"></rect>
                 <rect id="Rectangle" x="41.5" y="101.5" width="35" height="12"></rect>
             </g>
-            <rect id="Rectangle" fill="#C0ED17" x="33.5" y="33.5" width="57" height="57"></rect>
-            <circle id="Oval" fill="#5ECEDE" cx="49.5" cy="127.5" r="17.5"></circle>
+            <rect id="Rectangle" fill="#C0ED17" x="63.5" y="33.5" width="57" height="57"></rect>
+            <circle id="Oval" fill="#5ECEDE" cx="79.5" cy="127.5" r="17.5"></circle>
             <rect id="Rectangle" fill="#5ECEDE" x="6.5" y="236.5" width="247" height="12" rx="2"></rect>
         </g>
     </g>

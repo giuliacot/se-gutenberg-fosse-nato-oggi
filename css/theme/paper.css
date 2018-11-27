@@ -397,7 +397,8 @@ p.paragraph {
   padding: 1rem 0; }
 
 .reveal section img {
-  border: none; }
+  border: none;
+  box-shadow: none; }
 
 .reveal section img.layoutHalf__img,
 .reveal section img.layoutThreesome__img {

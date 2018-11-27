@@ -1,0 +1,36 @@
+
+<svg width="592px" height="445px" viewBox="0 0 592 445" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Responsive-desktop" transform="translate(0.000000, 90.000000)" fill-rule="nonzero" stroke="#373735" stroke-width="3">
+            <rect id="Rectangle" fill-opacity="0" fill="#D8D8D8" x="1.5" y="1.5" width="257" height="262" rx="2"></rect>
+            <rect id="Rectangle" fill="#FEA575" x="6.5" y="7.5" width="247" height="37" rx="2"></rect>
+            <rect id="Rectangle" fill="#5ECEDE" x="6.5" y="221.5" width="247" height="37" rx="2"></rect>
+            <rect id="Rectangle" fill="#C0ED17" x="6.5" y="52.5" width="119" height="67" rx="2"></rect>
+            <rect id="Rectangle" fill="#C0ED17" x="134.5" y="52.5" width="119" height="67" rx="2"></rect>
+            <rect id="Rectangle" fill="#F1BBED" x="6.5" y="127.5" width="77" height="87" rx="2"></rect>
+            <rect id="Rectangle" fill="#F1BBED" x="91.5" y="127.5" width="77" height="87" rx="2"></rect>
+            <rect id="Rectangle" fill="#F1BBED" x="176.5" y="127.5" width="77" height="87" rx="2"></rect>
+            <rect id="Rectangle" fill="#F1BBED" x="6.5" y="127.5" width="77" height="87" rx="2"></rect>
+        </g>
+        <g id="Responsive-medium" transform="translate(280.000000, 40.000000)" fill-rule="nonzero" stroke="#373735" stroke-width="3">
+            <rect id="Rectangle" fill-opacity="0" fill="#D8D8D8" x="1.5" y="1.5" width="197" height="363" rx="2"></rect>
+            <rect id="Rectangle" fill="#FEA575" x="6.5" y="7.5" width="187" height="37" rx="2"></rect>
+            <rect id="Rectangle" fill="#5ECEDE" x="6.5" y="322.5" width="187" height="37" rx="2"></rect>
+            <rect id="Rectangle" fill="#C0ED17" x="6.5" y="52.5" width="89" height="67" rx="2"></rect>
+            <rect id="Rectangle" fill="#C0ED17" x="104.5" y="52.5" width="89" height="67" rx="2"></rect>
+            <rect id="Rectangle" fill="#F1BBED" x="6.5" y="127.5" width="187" height="57" rx="2"></rect>
+            <rect id="Rectangle" fill="#F1BBED" x="6.5" y="192.5" width="187" height="57" rx="2"></rect>
+            <rect id="Rectangle" fill="#F1BBED" x="6.5" y="257.5" width="187" height="57" rx="2"></rect>
+        </g>
+        <g id="Responsive-medium" transform="translate(492.000000, 0.000000)" fill-rule="nonzero" stroke="#373735" stroke-width="3">
+            <rect id="Rectangle" fill-opacity="0" fill="#D8D8D8" x="1.5" y="1.5" width="97" height="442" rx="2"></rect>
+            <rect id="Rectangle" fill="#FEA575" x="6.5" y="7.5" width="87" height="37" rx="2"></rect>
+            <rect id="Rectangle" fill="#5ECEDE" x="6.5" y="400.5" width="87" height="37" rx="2"></rect>
+            <rect id="Rectangle" fill="#C0ED17" x="6.5" y="52.5" width="87" height="67" rx="2"></rect>
+            <rect id="Rectangle" fill="#C0ED17" x="5.5" y="127.5" width="89" height="67" rx="2"></rect>
+            <rect id="Rectangle" fill="#F1BBED" x="6.5" y="202.5" width="87" height="57" rx="2"></rect>
+            <rect id="Rectangle" fill="#F1BBED" x="6.5" y="267.5" width="87" height="57" rx="2"></rect>
+            <rect id="Rectangle" fill="#F1BBED" x="6.5" y="332.5" width="87" height="57" rx="2"></rect>
+        </g>
+    </g>
+</svg>

@@ -262,9 +262,14 @@ p.paragraph {
 .reveal section img {
   border: none;
   box-shadow: none;
+  max-width: 90%;
 }
 
 .reveal section img.layoutHalf__img,
 .reveal section img.layoutThreesome__img {
   margin: 0 auto;
+}
+
+.reveal section img.Gutenberg {
+  
 }

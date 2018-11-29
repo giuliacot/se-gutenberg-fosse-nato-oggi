@@ -404,3 +404,9 @@ p.paragraph {
 .reveal section img.layoutHalf__img,
 .reveal section img.layoutThreesome__img {
   margin: 0 auto; }
+
+.reveal section img.image {
+  max-width: 100%; }
+
+.reveal section video {
+  max-width: 100%; }

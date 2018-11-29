@@ -200,8 +200,8 @@
 							<h2 class="heading">Content ne abbiamo?</h2>
 							<ul class="list">
 								<li class="list__Item">minmax()</li>
+								<li class="list__Item">fit-content()</li>
 								<li class="list__Item">max-content & min-content</li>
-								<li class="list__Item">fit-content</li>
 							</ul>
 						</section>
 					</section>
@@ -217,31 +217,31 @@
 				</section>
 
 				<section class="paperContents">
-					<h2 class="heading">Homepage</h2>
-					<video autoplay loop controls poster="./assets/modular-grid.jpg">
-						<source src="./assets/modular_grid1.mp4"></source>
-					</video>
-					<!-- <img class="layoutHalf__img" src="https://media.giphy.com/media/2sbMdgYeBt6TQ2tbso/giphy.gif" alt=""> -->
-				</section>
+					<section>
+						<h2 class="heading">Dimensione fissa?</h2>
+						<img class="layoutHalf__img" src="./assets/start-grid-1.png" alt="">
+					</section>
 
-				<section class="paperContents">
-					<h2 class="heading">Dimensione fissa?</h2>
-					<img class="layoutHalf__img" src="./assets/start-grid-1.png" alt="">
+					<section>
+						<video autoplay loop controls poster="./assets/modular-boite-layout.glitch.me">
+							<source src="./assets/modular_grid1.mp4"></source>
+						</video>
+						<!-- <img class="layoutHalf__img" src="https://media.giphy.com/media/2sbMdgYeBt6TQ2tbso/giphy.gif" alt=""> -->
+					</section>
 				</section>
-
 				<!-- <section class="paperContents">
 					<p data-height="265" data-theme-id="0" data-slug-hash="QpZpWR" data-default-tab="html,result" data-user="jensimmons" data-pen-title="Fit content demo" class="codepen">See the Pen <a href="https://codepen.io/jensimmons/pen/QpZpWR/">Fit content demo</a> by Jen Simmons (<a href="https://codepen.io/jensimmons">@jensimmons</a>) on <a href="https://codepen.io">CodePen</a>.</p>
 					<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 				</section> -->
 				<section class="paperContents">
 					<section>
-						<h2 class="heading">fit-content</h2>
+						<h2 class="heading">fit-content()</h2>
 						<img class="layoutHalf__img" src="./assets/start-grid-2.png" alt="">
 					</section>
 
 					<section>
-						<h2 class="heading">fit-content</h2>
-						<video autoplay loop controls poster="./assets/modular-grid.jpg">
+						<h2 class="heading">fit-content()</h2>
+						<video autoplay loop controls poster="./assets/modular-boite-layout.glitch.me">
 							<source src="./assets/modular_grid2.mp4"></source>
 						</video>
 						<!-- <img class="layoutHalf__img" src="https://media.giphy.com/media/2sbMdgYeBt6TQ2tbso/giphy.gif" alt=""> -->
@@ -256,7 +256,7 @@
 	
 						<section>
 							<h2 class="heading">minmax()</h2>
-							<video autoplay loop controls poster="./assets/modular-grid.jpg">
+							<video autoplay loop controls poster="./assets/modular-boite-layout.glitch.me">
 								<source src="./assets/modular_grid3.mp4"></source>
 							</video>
 							<!-- <img class="layoutHalf__img" src="https://media.giphy.com/media/2sbMdgYeBt6TQ2tbso/giphy.gif" alt=""> -->
@@ -266,7 +266,7 @@
 					<section class="paperContents">
 							<section>
 								<h2 class="heading">Responsive</h2>
-								<video autoplay loop controls poster="./assets/modular-grid.jpg">
+								<video autoplay loop controls poster="./assets/modular-boite-layout.glitch.me">
 									<source src="./assets/responsive-grid.mp4"></source>
 								</video>
 								<!-- <img class="layoutHalf__img" src="https://media.giphy.com/media/2sbMdgYeBt6TQ2tbso/giphy.gif" alt=""> -->
@@ -296,16 +296,21 @@
 									<!-- Estendere le proprietà del float -->
 									<!-- Exclusion elements define exclusion areas that contribute to their containing block’s wrapping context. As a consequence, exclusions impact the layout of their containing block’s descendants. -->
 									<!-- Floats are part of the inline flow and float on the line box. Authors can control how the floats move on the line box, to the right or to the left. By contrast, exclusions can be positioned using any positioning scheme such as grid layout ([CSS3-GRID-LAYOUT]), flexible box ([CSS3-FLEXBOX]) or any other CSS positioning scheme.  -->
-									<video autoplay loop controls poster="./assets/modular-grid.jpg">
+									<video autoplay loop controls poster="./assets/modular-boite-layout.glitch.me">
 										<source src="./assets/exclusion2.mp4"></source>
 									</video>
 								</section>
 
 								<section>
-									<h2 class="heading">Ebbene si, è implementato solo su IE ed Edge</h2>
-									<img src="./assets/caniuse-exclusion.png" alt="">
+									<img class="image" src="./assets/caniuse-exclusion.png" alt="">
 								</section>
-								<!-- IE ha scommesso di nuovo sul cavallo vincente? :trollface: -->
+								<!-- <p>Rachel Andrew</p> -->
+
+								<!-- <section class="">
+									<h2 class="heading">Microsoft ha scommesso di nuovo sul cavallo vincente?</h2>
+									<img src="./assets/caniuse-exclusion.png" alt="">
+								</section> -->
+								<!-- :trollface: -->
 							</section>
 
 							<section class="paperContents">
@@ -318,7 +323,10 @@
 									<h2 class="heading">Le specifiche non sono evolute molto in questo senso</h2>
 								</section> -->
 
-								<section class="layout layoutHalf">
+							
+							</section>
+
+							<section class="paperContents layout layoutHalf">
 									<div class="layoutHalf__content">
 										<h2 class="heading ">Non solo schermi</h2>
 										<p class="paragraph">@media</p>
@@ -330,7 +338,6 @@
 									</ul>
 									<!-- <p>The screen is continuous media; if there is more content, we scroll to see it. There is no concept of it being broken up into individual pages. </p> -->
 								</section>
-							</section>
 
 							<!-- “In CSS terms, a paged medium is any medium where a document’s presentation is handled as a series of discrete “pages.” This is different than the screen, which is a continuous medium: documents are presented as a single, scrollable “page.” ”
 
@@ -348,6 +355,14 @@ Excerpt From: Eric A. Meyer, Estelle Weyl. “CSS: The Definitive Guide”. Appl
 									<!-- TODO fai schemino con pagine e margine dallo screenshot preso del CSS definite guide -->
 								</section>
 
+								<section class="layout layoutHalf">
+									<div class="layoutHalf__content">
+										<h2 class="heading ">Dal web alla pagina</h2>
+										<p class="paragraph">@page</p>
+									</div>
+									<img class="layoutHalf__img" src="./assets/page-css.png" alt="">
+								</section>
+
 								<section>
 									<img src="./assets/printcode2.png" alt="">
 								</section>
@@ -357,13 +372,15 @@ Excerpt From: Eric A. Meyer, Estelle Weyl. “CSS: The Definitive Guide”. Appl
 									<!-- As already described, once the content fills a page area, it will move onto a new page -->
 									<!-- If you were hoping to use Flexbox or CSS Grid in print stylesheets, you will probably be disappointed. -->
 									<!-- </section> -->
+									<!-- CSS Fragmentation oltre alla definizione della pagina. Quando il contenuto deve passare alla pagina successiva quando no? -->
 
 								<section>
 									<h2 class="heading">Testing print style sheet</h2>
 									<img src="./assets/print-styles-chrome.png" alt="">
 								</section>
+							</section>
 
-								<section>
+							<section class="paperContents">
 									<h2 class="heading">eBook</h2>
 									<!-- <p class="paragraph">An EPUB file is an archive that contains, in effect, a website</p> -->
 									<p class="paragraph">...in effetti è un website</p>
@@ -374,7 +391,6 @@ Excerpt From: Eric A. Meyer, Estelle Weyl. “CSS: The Definitive Guide”. Appl
 									<p class="paragraph">ePub 3.0 basato su HTML 5 e CSS 2.1</p>
 									<!-- IMG Gutenberg project -->
 								</section>
-							</section>
 
 							<section class="paperContents">
 								<h2 class="heading">"The most dangerous thought you can have as a creative person is to think you know what you're doing."</h2>
@@ -384,8 +400,9 @@ Excerpt From: Eric A. Meyer, Estelle Weyl. “CSS: The Definitive Guide”. Appl
 							<section class="paperContents layout layoutHalf">
 								<h2 class="heading layoutHalf__content">Quindi cosa farebbe Gutenberg oggi?</h2>
 								<p class="paragraph">...non lo so è lui il genio!</p>
-								<img class="Gutenberg layoutHalf__img" src="./assets/Johannes-Gutenberg -thug-life.png" alt="">
+								<img class="Gutenberg layoutHalf__img" src="./assets/Johannes-Gutenberg-thug-life.png" alt="">
 							</section>
+
 					<!-- Serving the content -->
 			</div>
 		</div>

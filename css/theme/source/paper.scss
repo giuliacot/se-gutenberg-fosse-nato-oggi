@@ -270,6 +270,14 @@ p.paragraph {
   margin: 0 auto;
 }
 
+.reveal section img.image {
+  max-width: 100%;
+}
+
+.reveal section video {
+  max-width: 100%;
+}
+
 .reveal section img.Gutenberg {
   
 }

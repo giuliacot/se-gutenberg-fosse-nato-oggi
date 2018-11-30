@@ -309,7 +309,7 @@ h1.mainHeading {
   text-align: left;
   font-family: 'Domine', serif;
   font-weight: 800;
-  font-size: 77.664px;
+  font-size: 72.4864px;
   color: #2D2D35;
   text-transform: initial;
   margin-bottom: 0; }
@@ -319,7 +319,7 @@ h1.mainHeading {
     padding: 2px;
     background-color: #2D2D35;
     display: block;
-    margin-top: 3rem; }
+    margin-top: 2.8rem; }
 
 p.subTitle {
   text-align: left;
@@ -328,8 +328,20 @@ p.subTitle {
   color: #2D2D35;
   line-height: 1.2;
   text-align: left;
-  margin-top: 3rem;
-  margin-bottom: 0; }
+  margin-bottom: 0;
+  margin-top: 0; }
+
+div.subTitleWrapper.subTitleWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2.8rem; }
+
+.subTitle__img {
+  max-width: 30% !important;
+  box-shadow: none !important;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important; }
 
 h2.heading {
   text-align: left;
@@ -397,9 +409,8 @@ p.paragraph {
   padding: 1rem 0; }
 
 .reveal section img {
-  border: none;
-  box-shadow: none;
-  max-width: 90%; }
+  border: 2px solid #2D2D35;
+  box-shadow: none; }
 
 .reveal section img.layoutHalf__img,
 .reveal section img.layoutThreesome__img {
@@ -408,5 +419,16 @@ p.paragraph {
 .reveal section img.image {
   max-width: 100%; }
 
+.image {
+  max-width: 100%; }
+
+.reveal section img[src$='.svg'] {
+  border: none;
+  box-shadow: none;
+  max-width: 90%; }
+
 .reveal section video {
   max-width: 100%; }
+
+.reveal section img.Gutenberg {
+  border: none; }

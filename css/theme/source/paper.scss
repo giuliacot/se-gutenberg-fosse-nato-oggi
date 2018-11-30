@@ -78,7 +78,7 @@ $one-ratio: 1.618;
 $measures:(
    rocco: 5,
    biggest: 4,
-   bigger: 3,
+   bigger: 2.8,
    big: 2,
    quite-nor: 1.5,
    nor: 1,
@@ -161,7 +161,7 @@ body {
 // These to experiment for the Paper layout
 .slides.paperSlides {
 	border: 2px solid $carbon;
-	box-shadow: -1.5rem 1.5rem 0  $carbon;
+	box-shadow: -1.5rem 1.5rem 0 $carbon;
 
   height: calc(700px - 4.5rem) !important;
   width: calc(960px - 8rem) !important;
@@ -201,8 +201,22 @@ h1.mainHeading{
 p.subTitle {
   @include fontDef('author', $carbon);
   text-align: left;
-  margin-top: map-get($measures, bigger) * 1rem;
   margin-bottom: 0;
+  margin-top: 0;
+}
+
+div.subTitleWrapper.subTitleWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: map-get($measures, bigger) * 1rem;
+}
+
+.subTitle__img {
+  max-width: 30% !important;
+  box-shadow: none !important;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
 }
 
 h2.heading {
@@ -260,9 +274,8 @@ p.paragraph {
 }
 
 .reveal section img {
-  border: none;
+  border: 2px solid $carbon;
   box-shadow: none;
-  max-width: 90%;
 }
 
 .reveal section img.layoutHalf__img,
@@ -274,10 +287,21 @@ p.paragraph {
   max-width: 100%;
 }
 
+.image {
+  max-width: 100%;
+}
+
+.reveal section img[src$='.svg'] {
+  border: none;
+  box-shadow: none;
+  max-width: 90%;
+}
+
+
 .reveal section video {
   max-width: 100%;
 }
 
 .reveal section img.Gutenberg {
-  
+  border: none;
 }

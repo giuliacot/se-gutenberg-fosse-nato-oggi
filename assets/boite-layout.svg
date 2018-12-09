@@ -1,0 +1,55 @@
+
+<svg width="640px" height="902px" viewBox="0 0 640 902" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g id="Page-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Rectangle" stroke="#373735" stroke-width="3" fill-opacity="0" fill="#D8D8D8" fill-rule="nonzero" x="1.5" y="1.5" width="637" height="899" rx="2"></rect>
+        <rect id="Footer" stroke="#373735" stroke-width="3" fill-opacity="0" fill="#D8D8D8" fill-rule="nonzero" x="12.5" y="11.5" width="130.36" height="337" rx="2"></rect>
+        <g id="Heading" transform="translate(11.000000, 10.000000)">
+            <rect id="Menu" stroke="#373735" stroke-width="3" fill="#F0E71D" fill-rule="nonzero" x="1.5" y="1.5" width="130.36" height="337" rx="2"></rect>
+            <text font-family="DidactGothic-Regular, Didact Gothic" font-size="22" font-weight="normal" fill="#373735">
+                <tspan x="7" y="29">Heading</tspan>
+            </text>
+        </g>
+        <g id="Contacts" transform="translate(152.000000, 238.000000)">
+            <rect id="l" stroke="#373735" stroke-width="3" fill="#C0ED17" fill-rule="nonzero" x="1.83333333" y="1.5" width="91.36" height="109" rx="2"></rect>
+            <text font-family="DidactGothic-Regular, Didact Gothic" font-size="22" font-weight="normal" fill="#373735">
+                <tspan x="6" y="27">Contacts</tspan>
+            </text>
+        </g>
+        <g id="ListItems-1" transform="translate(118.000000, 540.000000)">
+            <path d="M1.5,1.5 L1.5,350.5 L131.86,350.5 L131.86,180.5 L264.86,180.5 L264.86,1.5 L1.5,1.5 Z" id="ListItems" stroke="#373735" stroke-width="3" fill="#FEA575" fill-rule="nonzero"></path>
+            <text id="List-Items-Copy" font-family="DidactGothic-Regular, Didact Gothic" font-size="22" font-weight="normal" fill="#373735">
+                <tspan x="8" y="27">List Items</tspan>
+            </text>
+        </g>
+        <g id="ListItems-2" transform="translate(253.000000, 158.000000)">
+            <path d="M1.5,1.5 L1.5,369.5 L131.5,369.5 L131.5,190.5 L264.5,190.5 L264.5,1.5 L1.5,1.5 Z" id="ListItems" stroke="#373735" stroke-width="3" fill="#70FFEE" fill-rule="nonzero" transform="translate(133.000000, 185.500000) scale(-1, 1) translate(-133.000000, -185.500000) "></path>
+            <text id="List-Items" font-family="DidactGothic-Regular, Didact Gothic" font-size="22" font-weight="normal" fill="#373735">
+                <tspan x="8" y="29">List Items</tspan>
+            </text>
+        </g>
+        <g id="Menu" transform="translate(529.000000, 10.000000)">
+            <rect id="Heading" stroke="#373735" stroke-width="3" fill="#C0ED17" fill-rule="nonzero" x="1.5" y="1.5" width="97" height="463" rx="2"></rect>
+            <text font-family="DidactGothic-Regular, Didact Gothic" font-size="22" font-weight="normal" fill="#373735">
+                <tspan x="5" y="26">Menu</tspan>
+            </text>
+        </g>
+        <g id="Content-2" transform="translate(11.000000, 360.000000)">
+            <rect id="Content-3" stroke="#373735" stroke-width="3" fill="#F1BBED" fill-rule="nonzero" x="1.5" y="1.5" width="363.666667" height="167" rx="2"></rect>
+            <text font-family="DidactGothic-Regular, Didact Gothic" font-size="22" font-weight="normal" fill="#373735">
+                <tspan x="8" y="30">Content-2</tspan>
+            </text>
+        </g>
+        <g id="Content-1" transform="translate(153.000000, 10.000000)">
+            <rect stroke="#373735" stroke-width="3" fill="#F1BBED" fill-rule="nonzero" x="1.5" y="1.5" width="363.666667" height="137" rx="2"></rect>
+            <text font-family="DidactGothic-Regular, Didact Gothic" font-size="22" font-weight="normal" fill="#373735">
+                <tspan x="8" y="23">Content-1</tspan>
+            </text>
+        </g>
+        <g id="Content-3" transform="translate(258.000000, 728.000000)">
+            <rect id="Content-2" stroke="#373735" stroke-width="3" fill="#F1BBED" fill-rule="nonzero" x="1.5" y="1.5" width="367.666667" height="161" rx="2"></rect>
+            <text font-family="DidactGothic-Regular, Didact Gothic" font-size="22" font-weight="normal" fill="#373735">
+                <tspan x="8" y="28">Content-3</tspan>
+            </text>
+        </g>
+    </g>
+</svg>

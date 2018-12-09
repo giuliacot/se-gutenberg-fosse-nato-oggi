@@ -1,0 +1,15 @@
+
+<svg width="260px" height="265px" viewBox="0 0 260 265" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Table-ie" fill-rule="nonzero" stroke="#373735" stroke-width="3">
+            <rect id="Rectangle" fill-opacity="0" fill="#D8D8D8" x="1.5" y="1.5" width="257" height="262" rx="2"></rect>
+            <rect id="Rectangle" fill="#FEA575" x="6.5" y="7.5" width="247" height="67" rx="2"></rect>
+            <rect id="Rectangle" fill="#C0ED17" x="194.5" y="82.5" width="57" height="86" rx="2"></rect>
+            <rect id="Rectangle" fill="#C0ED17" x="6.5" y="82.5" width="87" height="86" rx="2"></rect>
+            <rect id="Rectangle" fill="#C0ED17" x="100.5" y="82.5" width="87" height="86" rx="2"></rect>
+            <rect id="Rectangle" fill="#5ECEDE" x="6.5" y="176.5" width="247" height="12" rx="2"></rect>
+        </g>
+        <circle id="Oval" stroke="#373735" stroke-width="3" fill="#F1BBED" fill-rule="nonzero" cx="48.5" cy="40.5" r="23.5"></circle>
+        <circle id="Oval" stroke="#373735" stroke-width="3" fill="#F1BBED" fill-rule="nonzero" cx="210.5" cy="40.5" r="23.5"></circle>
+    </g>
+</svg>

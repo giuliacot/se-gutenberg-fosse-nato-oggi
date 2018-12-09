@@ -1,0 +1,307 @@
+/**
+* Paper theme
+*/
+
+
+// Default mixins and settings -----------------
+@import "../template/mixins";
+@import "../template/settings";
+// ---------------------------------------------
+
+
+// Include theme-specific fonts
+@import url('https://fonts.googleapis.com/css?family=Allerta+Stencil|Space+Mono');
+@import url('https://fonts.googleapis.com/css?family=BioRhyme');
+
+
+// Override theme settings (see ../template/settings.scss)
+$backgroundColor: #222;
+
+$mainColor: #fff;
+$headingColor: #fff;
+
+$mainFontSize: 42px;
+$mainFont: 'Source Sans Pro', Helvetica, sans-serif;
+$headingFont: 'Source Sans Pro', Helvetica, sans-serif;
+$headingTextShadow: none;
+$headingLetterSpacing: normal;
+$headingTextTransform: uppercase;
+$headingFontWeight: 600;
+$linkColor: #42affa;
+$linkColorHover: lighten( $linkColor, 15% );
+$selectionBackgroundColor: lighten( $linkColor, 25% );
+
+$heading1Size: 2.5em;
+$heading2Size: 1.6em;
+$heading3Size: 1.3em;
+$heading4Size: 1.0em;
+
+section.has-light-background {
+	&, h1, h2, h3, h4, h5, h6 {
+		color: #222;
+	}
+}
+
+// Theme template ------------------------------
+@import "../template/theme";
+// ---------------------------------------------
+
+/*
+* Colors
+*/
+
+$avril: #00d323;
+$mai: #f3f0d1;
+// $mai: #C9C0AA;
+$juin: #f7de1c;
+$light-avril: #DEFEA7;
+
+
+
+
+$carbon: #2D2D35;
+
+
+/*
+* Typography
+*/
+$font-base: 16px;
+
+$ratios:(
+   gold: 1.618,
+   des: 1.5,
+   mob: 1.9
+);
+
+$one-ratio: 1.618;
+
+$measures:(
+   rocco: 5,
+   biggest: 4,
+   bigger: 2.8,
+   big: 2,
+   quite-nor: 1.5,
+   nor: 1,
+   sm: 0.75,
+   xsm: 0.5,
+   xxsmall: 0.25
+);
+
+@function fontsize($ratio, $measure, $base) {
+  $size: ($measure * $ratio) * $base;
+  @return $size;
+}
+
+@mixin fontDef($type: 'mainHeading', $color: $carbon) {
+  text-align: left;
+  @if $type == 'mainHeading' {
+    // font-family: 'BioRhyme', serif;
+    font-family: 'Domine', serif;
+    font-weight: 800;
+    font-size: fontsize(map-get($ratios, gold), map-get($measures, bigger), $font-base);
+    color: $color;
+
+    &:after {
+      width: 1ch;
+      content: '';
+      padding: 2px;
+      background-color: $carbon;
+      display: block;
+      margin-top: map-get($measures, bigger) * 1rem;
+    }
+  }
+  @else if $type == 'subHeading'{
+    font-family: 'Domine', serif;
+    // font-family: 'BioRhyme', serif;
+    font-size: fontsize(map-get($ratios, gold), map-get($measures, big), $font-base);
+    color: $color;
+
+    &:after {
+      width: 1ch;
+      content: '';
+      padding: 2px;
+      background-color: $carbon;
+      display: block;
+      margin: map-get($measures, big) * 1rem 0;
+    }
+  }
+  @else if $type == 'author'{
+    font-family: 'Montserrat', sans-serif;
+    // font-family: 'Domine', serif;
+    font-size: fontsize(map-get($ratios, gold), map-get($measures, nor), $font-base);
+    color: $color;
+    line-height: 1.2;
+  }
+  @else if $type == 'paragraph'{
+    // font-family: 'Space Mono', monospace;
+    font-family: 'Montserrat', sans-serif;
+    // font-family: 'Domine', serif;
+    font-size: fontsize(map-get($ratios, gold), map-get($measures, nor), $font-base);
+    color: $color;
+    line-height: 1.2;
+    text-align: left;
+  }
+  @else if $type == 'link'{
+    font-family: 'Space Mono', monospace;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Domine', serif;
+    font-size: fontsize(map-get($ratios, gold), map-get($measures, nor), $font-base);
+    color: $color;
+    line-height: 1.2;
+    text-align: left;
+  }
+}
+
+body {
+  background-color: $juin;
+  background-color: $light-avril;
+  background-color: #FEA575;
+}
+
+// These to experiment for the Paper layout
+.slides.paperSlides {
+	border: 2px solid $carbon;
+	box-shadow: -1.5rem 1.5rem 0 $carbon;
+
+  height: calc(700px - 4.5rem) !important;
+  width: calc(960px - 8rem) !important;
+  background-color: $mai;
+}
+
+.reveal .paperContents {
+  margin: 0 2.5rem;
+  width: calc(100% - 5rem);
+  top: 50% !important;
+  transform: translateY(-50%);
+
+  & section {
+    width: calc(100% - 5rem);
+    // top: 0 !important;
+    top: 50% !important;
+    transform: translateY(-50%);
+  }
+  // height: calc(100vh - 16rem) !important;
+}
+
+.reveal .slides > section {
+  width: calc(100% - 5rem);
+
+}
+
+.reveal .controls {
+  color: $carbon;
+}
+
+h1.mainHeading{
+	@include fontDef('mainHeading', $carbon);
+  text-transform: initial;
+  margin-bottom: 0;
+}
+
+p.subTitle {
+  @include fontDef('author', $carbon);
+  text-align: left;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+div.subTitleWrapper.subTitleWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: map-get($measures, bigger) * 1rem;
+}
+
+.subTitle__img {
+  max-width: 30% !important;
+  box-shadow: none !important;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+h2.heading {
+  @include fontDef('subHeading', $carbon);
+  text-transform: initial;
+}
+
+ul.list {
+  @include fontDef('paragraph', $carbon);
+  width: 100%;
+}
+
+li.list__Item {
+  @include fontDef('paragraph', $carbon);
+}
+
+p.paragraph {
+  @include fontDef('paragraph', $carbon);
+  text-align: left;
+
+  &--end {
+    text-align: right;
+  }
+}
+
+.layout {
+  display: grid !important;
+}
+
+// TODO remove layoutHalf and take the layoutThreesome - change the name
+.layoutHalf {
+  grid-template-areas: 'areaContent areaImg';
+  grid-template-columns: repeat(2, minmax(50%, auto));
+  grid-gap: map-get($measures, nor) * 1rem;
+  align-items: center;
+  
+  &__content {
+    grid-area: areaContent;
+  }
+
+  &__img {
+    grid-area: areaImg;
+    align-self: center;
+    margin: 0 auto;
+  }
+}
+
+.layoutThreesome {
+  grid-template-areas: 'img1 img2';
+  grid-gap: map-get($measures, nor) * 1rem;
+  grid-auto-flow: row;
+  align-items: center;
+  justify-content: center;
+  padding: map-get($measures, nor) * 1rem 0;
+}
+
+.reveal section img {
+  border: 2px solid $carbon;
+  box-shadow: none;
+}
+
+.reveal section img.layoutHalf__img,
+.reveal section img.layoutThreesome__img {
+  margin: 0 auto;
+}
+
+.reveal section img.image {
+  max-width: 100%;
+}
+
+.image {
+  max-width: 100%;
+}
+
+.reveal section img[src$='.svg'] {
+  border: none;
+  box-shadow: none;
+  max-width: 90%;
+}
+
+
+.reveal section video {
+  max-width: 100%;
+}
+
+.reveal section img.Gutenberg {
+  border: none;
+}

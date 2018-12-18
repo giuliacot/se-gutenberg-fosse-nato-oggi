@@ -307,3 +307,8 @@ p.paragraph {
   border: none;
   background-color: initial;
 }
+
+
+.reveal a.paperLink {
+  @include fontDef('paragraph', $avril);
+}

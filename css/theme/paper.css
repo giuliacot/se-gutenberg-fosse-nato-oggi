@@ -431,4 +431,5 @@ p.paragraph {
   max-width: 100%; }
 
 .reveal section img.Gutenberg {
-  border: none; }
+  border: none;
+  background-color: initial; }

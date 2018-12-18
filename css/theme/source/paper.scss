@@ -292,6 +292,7 @@ p.paragraph {
 }
 
 .reveal section img[src$='.svg'] {
+ 
   border: none;
   box-shadow: none;
   max-width: 90%;
@@ -304,4 +305,5 @@ p.paragraph {
 
 .reveal section img.Gutenberg {
   border: none;
+  background-color: initial;
 }
